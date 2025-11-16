@@ -1,0 +1,23 @@
+:root{
+--bg:#f4f7fb;
+--card:#ffffff;
+--accent:#3b82f6;
+--muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial; background:var(--bg); margin:0; color:#111}
+.container{max-width:640px;margin:48px auto;padding:24px}
+h1{text-align:center;margin-bottom:18px}
+#task-form{display:flex;gap:8px;margin-bottom:16px}
+#task-form input{flex:1;padding:10px;border-radius:8px;border:1px solid #d1d5db}
+#task-form button{padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:#fff}
+#tasks{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+#task-list{list-style:none;margin:0;padding:0}
+.task-item{display:flex;align-items:center;justify-content:space-between;padding:10px;border-bottom:1px solid #eef2f7}
+.task-item:last-child{border-bottom:none}
+.task-text{margin-left:8px}
+.task-text.completed{text-decoration:line-through;color:var(--muted)}
+.actions button{margin-left:8px;padding:6px 8px;border-radius:8px;border:1px solid #e5e7eb;background:white}
+.actions button.delete{border-color:#fca5a5}
+.actions button.edit{border-color:#c7d2fe}
+@media (max-width:480px){.container{margin:20px;padding:16px}}

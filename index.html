@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple Todo App</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main class="container">
+<h1>Todo App</h1>
+
+
+<form id="task-form">
+<input id="task-input" type="text" placeholder="Add a new task..." required maxlength="200" />
+<button type="submit">Add</button>
+</form>
+
+
+<section id="tasks">
+<ul id="task-list"></ul>
+</section>
+</main>
+
+
+<template id="task-template">
+<li class="task-item">
+<label>
+<input class="complete-checkbox" type="checkbox" />
+<span class="task-text"></span>
+</label>
+<div class="actions">
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</div>
+</li>
+</template>
+
+
+<script src="app.js"></script>
+</body>
+</html>
